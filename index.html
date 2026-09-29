@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Tiffany Kim — real estate developer, founder of POPL, and MIT Sloan MBA candidate. Portfolio of housing, capital, and stakeholder-alignment work.">
+<meta property="og:title" content="Tiffany Kim">
+<meta property="og:description" content="Real estate developer, founder of POPL, and MIT Sloan MBA candidate.">
+<meta property="og:image" content="117th-rendering.jpg">
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Tiffany Kim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#EEF0EA;
+  --paper-2:#E4E7DF;
+  --ink:#16201B;
+  --ink-2:#4A554F;
+  --line:#C3C9BF;
+  --accent:#2B45C4;
+  --accent-soft:#DCE1F7;
+  --flag:#8A5A00;
+  --flag-bg:#F6EBCF;
+  --serif:"Young Serif",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#111513;--paper-2:#181D1A;--ink:#E4E8E1;--ink-2:#A3ADA6;--line:#2E3631;
+    --accent:#93A5FF;--accent-soft:#1E2544;--flag:#E8C06A;--flag-bg:#2E2610;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#111513;--paper-2:#181D1A;--ink:#E4E8E1;--ink-2:#A3ADA6;--line:#2E3631;
+  --accent:#93A5FF;--accent-soft:#1E2544;--flag:#E8C06A;--flag-bg:#2E2610;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--paper);color:var(--ink);font:16px/1.6 var(--sans);padding-inline:20px;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin-inline:auto}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:400;text-wrap:balance;margin:0}
+p{margin:0}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2)}
+.tnum{font-variant-numeric:tabular-nums}
+
+/* Header / title block */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:14px;flex-wrap:wrap}
+.brand{font-family:var(--serif);font-size:19px;color:var(--ink);text-decoration:none}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);text-decoration:none}
+nav a:hover{color:var(--accent)}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1.35fr 1fr;gap:48px;align-items:end;padding-block:64px 48px;border-bottom:1px solid var(--line)}
+.hero h1{font-size:clamp(34px,5.2vw,58px);line-height:1.08;letter-spacing:-.01em}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.hero .lede{margin-top:24px;max-width:58ch;font-size:18px;color:var(--ink-2)}
+.hero .meta{margin-top:28px;display:flex;gap:10px 24px;flex-wrap:wrap}
+.drawing{color:var(--ink);max-width:100%}
+.drawing svg{width:100%;height:auto;display:block}
+.drawing figcaption{margin-top:10px}
+
+/* Ledger */
+.ledger{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)}
+.ledger div{padding:22px 20px 22px 0;display:flex;flex-direction:column;gap:4px}
+.ledger div + div{padding-left:20px;border-left:1px solid var(--line)}
+.ledger b{font-family:var(--serif);font-weight:400;font-size:30px;line-height:1.1}
+.ledger span{font-size:14px;color:var(--ink-2)}
+
+section{padding-block:72px;border-bottom:1px solid var(--line)}
+.sec-head{display:grid;grid-template-columns:200px 1fr;gap:32px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(28px,3.6vw,38px);line-height:1.15}
+.sec-head p{margin-top:12px;color:var(--ink-2);max-width:60ch}
+
+/* Thesis */
+.thesis{display:grid;grid-template-columns:200px 1fr;gap:32px}
+.thesis .body{display:grid;gap:18px;max-width:64ch;font-size:17px}
+.bridge{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;margin-top:12px;padding:20px;background:var(--paper-2);border-radius:4px}
+.bridge .side h3{font-size:18px}
+.bridge .side p{font-size:14px;color:var(--ink-2);margin-top:4px}
+.bridge .span{font-family:var(--mono);font-size:12px;color:var(--accent);text-align:center;white-space:nowrap}
+.bridge .span::before,.bridge .span::after{content:"";display:block;height:1px;background:var(--accent);margin-block:6px}
+
+/* Project sheets */
+.sheets{display:grid;gap:0}
+.sheet{display:grid;grid-template-columns:200px 1fr;gap:32px;padding-block:36px;border-top:1px solid var(--line)}
+.sheet:first-child{border-top:0;padding-top:0}
+.sheet .no{display:flex;flex-direction:column;gap:6px}
+.sheet .no strong{font-family:var(--mono);font-weight:500;font-size:14px;color:var(--accent);letter-spacing:.04em}
+.sheet h3{font-size:26px;line-height:1.2}
+.sheet .sum{margin-top:12px;max-width:64ch;color:var(--ink)}
+.specs{margin-top:20px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border:1px solid var(--line);border-radius:4px}
+.specs div{padding:12px 14px;display:flex;flex-direction:column;gap:2px}
+.specs div + div{border-left:1px solid var(--line)}
+.specs dd{margin:0;font-size:14px}
+.specs dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2)}
+.sheet ul{margin:16px 0 0;padding-left:18px;max-width:64ch;display:grid;gap:6px;color:var(--ink-2)}
+.status{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:999px;border:1px solid currentColor;width:fit-content}
+.status.live{color:var(--accent)}
+.status.done{color:var(--ink-2)}
+
+/* Experience */
+.timeline{display:grid;gap:0}
+.role{display:grid;grid-template-columns:200px 1fr;gap:32px;padding-block:22px;border-top:1px solid var(--line)}
+.role:first-child{border-top:0;padding-top:0}
+.role h3{font-size:20px}
+.role .org{color:var(--ink-2);font-size:15px;margin-top:2px}
+.role p.d{margin-top:8px;max-width:64ch}
+
+/* Also / writing */
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.cols h3{font-size:20px;margin-bottom:8px}
+.cols p{color:var(--ink-2);font-size:15px}
+.cols a{font-size:15px}
+
+.contact{display:grid;grid-template-columns:200px 1fr;gap:32px}
+.contact .addr{font-family:var(--serif);font-size:clamp(22px,3vw,30px);user-select:all;word-break:break-word}
+.contact .row{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-top:12px}
+button.copy{font:500 13px var(--sans);background:transparent;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:6px 14px;cursor:pointer}
+button.copy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{padding-block:28px 48px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* Draft flags — delete before sharing */
+.flag{display:inline;font:500 11px/1.4 var(--mono);color:var(--flag);background:var(--flag-bg);padding:1px 6px;border-radius:3px;letter-spacing:.02em;text-transform:none}
+.draftbar{background:var(--flag-bg);color:var(--flag);font:13px/1.5 var(--sans);padding:10px 20px;margin-inline:-20px;text-align:center}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;gap:32px;padding-block:40px 36px}
+  .drawing{max-width:360px}
+  .ledger{grid-template-columns:repeat(2,1fr)}
+  .ledger div:nth-child(3){padding-left:0;border-left:0}
+  .ledger div:nth-child(n+3){border-top:1px solid var(--line)}
+  .sec-head,.thesis,.sheet,.role,.contact{grid-template-columns:1fr;gap:12px}
+  .specs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .specs div:nth-child(3){border-left:0}
+  .specs div:nth-child(n+3){border-top:1px solid var(--line)}
+  .cols{grid-template-columns:1fr}
+  section{padding-block:52px}
+  .bridge{grid-template-columns:1fr}
+  .bridge .span{white-space:normal}
+}
+
+/* Portfolio filters + theme tags */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px}
+.filters button{font:500 13px var(--sans);background:transparent;color:var(--ink-2);border:1px solid var(--line);border-radius:999px;padding:6px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.filters button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.tag{font:500 11px/1.5 var(--mono);letter-spacing:.04em;padding:2px 8px;border-radius:3px;background:var(--accent-soft);color:var(--accent)}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);border-radius:4px;margin-top:8px}
+.pillars div{padding:18px 18px 20px}
+.pillars div + div{border-left:1px solid var(--line)}
+.pillars h3{font-size:19px}
+.pillars p{font-size:14px;color:var(--ink-2);margin-top:6px}
+.popl{display:grid;grid-template-columns:200px 1fr;gap:32px}
+.popl .body{display:grid;gap:16px;max-width:64ch;font-size:17px}
+.popl ul{margin:0;padding-left:18px;display:grid;gap:6px;color:var(--ink-2);font-size:16px}
+@media (max-width:820px){
+  .pillars{grid-template-columns:1fr}
+  .pillars div + div{border-left:0;border-top:1px solid var(--line)}
+  .popl{grid-template-columns:1fr;gap:12px}
+}
+</style>
+<style>
+.links{display:flex;gap:8px 18px;flex-wrap:wrap;margin-top:16px;font-size:15px}
+.links a{text-decoration:none;border-bottom:1px solid var(--accent-soft)}
+.links a:hover{border-bottom-color:var(--accent)}
+.sub-proj{margin-top:24px;padding-top:20px;border-top:1px dashed var(--line)}
+.sub-proj h4{font:600 15px var(--sans);margin:0}
+.sub-proj p{margin-top:6px;color:var(--ink-2);max-width:64ch}
+.contact .addrs{display:grid;gap:14px;margin-top:20px}
+.contact .addrline{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.hero{border-bottom:1px solid var(--line)}
+.shot{margin:20px 0 0;max-width:100%}
+.shot img{display:block;width:100%;height:auto;border-radius:3px;background:var(--paper-2)}
+.shot.portrait{max-width:440px}
+.shot.portrait img{aspect-ratio:4/5;object-fit:cover;object-position:center 60%}
+/* P-01 case study */
+.why{margin-top:24px;padding:24px;background:var(--paper-2);border-radius:4px;display:grid;gap:14px}
+.why-title{font-family:var(--serif);font-weight:400;font-size:clamp(21px,2.4vw,25px);line-height:1.25;text-wrap:balance;margin:0}
+.why-lede{max-width:62ch;color:var(--ink-2)}
+.yes{list-style:none;margin:4px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:1px solid var(--line)}
+.yes li{padding:14px 16px 14px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.yes li:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
+.yes .who{font:600 14px var(--sans);color:var(--accent)}
+.yes .need{font-size:15px}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.paths div{padding:12px 14px;border:1px solid var(--line);border-radius:4px;background:var(--paper);display:grid;gap:4px;align-content:start}
+.paths p{font-size:14px}
+.cta{justify-self:start;display:inline-block;margin-top:4px;padding:10px 18px;border-radius:999px;background:var(--accent);color:var(--paper);text-decoration:none;font:600 14px var(--sans)}
+.cta:hover{filter:brightness(1.08)}
+.title-link{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.title-link:hover{color:var(--accent);border-bottom-color:var(--accent)}
+.gaps .gap{font-size:16px;color:var(--ink);margin-top:6px}
+.cv{width:100%;border-collapse:collapse;font-size:15px}
+.cv td{padding:10px 16px 10px 0;border-top:1px solid var(--line);vertical-align:top}
+.cv tr:first-child td{border-top:0}
+.cv .yr{font:13px var(--mono);color:var(--ink-2);white-space:nowrap;width:84px}
+.cv b{font-weight:600;white-space:nowrap}
+.cv td:last-child{color:var(--ink-2)}
+@media (max-width:820px){
+  .yes{grid-template-columns:1fr}
+  .yes li:nth-child(even){padding-left:0;border-left:0}
+  .paths{grid-template-columns:1fr}
+  .cv tr{display:grid;grid-template-columns:84px 1fr;border-top:1px solid var(--line);padding-block:10px}
+  .cv tr:first-child{border-top:0}
+  .cv td{border:0;padding:0 12px 0 0}
+  .cv td:last-child{grid-column:2}
+}
+.shot figcaption{margin-top:8px;font:12px/1.4 var(--mono);color:var(--ink-2);letter-spacing:.02em}
+</style>
+
+
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">Tiffany Kim</a>
+    <nav aria-label="Sections">
+      <a href="#focus">Focus</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#popl">POPL</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="hero">
+    <div>
+      <p class="mono">MIT Sloan MBA Candidate ’27 &nbsp;·&nbsp; Founder, POPL</p>
+      <h1 style="margin-top:14px">Ten years of getting <em>capital, buildings, and communities</em> on the same page.</h1>
+      <p class="lede">I'm a real estate developer and an MBA candidate at MIT Sloan. My work focuses on economic empowerment through real estate and on aligning everyone a project depends on: owners, lenders, city officials, and the neighbors who already live there. Before founding POPL, I worked in real estate finance and development at Goldman Sachs, Redcar, and Assembly OSM.</p>
+      <div class="meta">
+        <span class="mono">Cambridge, MA / Brooklyn, NY</span>
+        <span class="mono">MWBE · NYS certified</span>
+      </div>
+    </div>
+    <figure class="drawing" style="margin:0">
+      <svg viewBox="0 0 320 300" role="img" aria-label="Line elevation of a three-story triple-decker house with a bay window, marked with dimension lines">
+        <g fill="none" stroke="currentColor" stroke-width="1.4">
+          <path d="M70 90 L160 40 L250 90"/>
+          <rect x="80" y="90" width="160" height="180"/>
+          <line x1="80" y1="150" x2="240" y2="150"/>
+          <line x1="80" y1="210" x2="240" y2="210"/>
+          <path d="M150 96 h60 v168 h-60 z"/>
+          <rect x="160" y="104" width="16" height="36"/><rect x="184" y="104" width="16" height="36"/>
+          <rect x="160" y="164" width="16" height="36"/><rect x="184" y="164" width="16" height="36"/>
+          <rect x="160" y="224" width="16" height="36"/><rect x="184" y="224" width="16" height="36"/>
+          <rect x="96" y="104" width="18" height="34"/>
+          <rect x="96" y="164" width="18" height="34"/>
+          <rect x="96" y="232" width="22" height="38"/>
+          <line x1="40" y1="270" x2="290" y2="270"/>
+        </g>
+        <g stroke="var(--accent)" stroke-width="1" fill="none">
+          <line x1="262" y1="90" x2="262" y2="270"/>
+          <line x1="256" y1="90" x2="268" y2="90"/><line x1="256" y1="150" x2="268" y2="150"/>
+          <line x1="256" y1="210" x2="268" y2="210"/><line x1="256" y1="270" x2="268" y2="270"/>
+          <line x1="80" y1="285" x2="240" y2="285"/>
+          <line x1="80" y1="279" x2="80" y2="291"/><line x1="240" y1="279" x2="240" y2="291"/>
+        </g>
+        <g font-family="IBM Plex Mono, monospace" font-size="10" fill="var(--accent)">
+          <text x="272" y="124">UNIT 3</text>
+          <text x="272" y="184">UNIT 2</text>
+          <text x="272" y="244">UNIT 1</text>
+          <text x="160" y="299" text-anchor="middle">CAMBRIDGEPORT · 1903</text>
+        </g>
+      </svg>
+      <figcaption class="mono">Sheet A-1 · POPL pilot, south elevation (schematic)</figcaption>
+    </figure>
+  </div>
+
+  <section id="focus">
+    <div class="popl">
+      <p class="mono">Focus</p>
+      <div class="body">
+        <h2>What I work on</h2>
+        <p>My projects fall into one or more of three areas. Each project below is tagged with the ones it covers.</p>
+        <div class="pillars">
+          <div><h3>Economic empowerment</h3><p>Using real estate to build and keep wealth in communities, especially for long-time owners and residents who usually miss out on the upside.</p></div>
+          <div><h3>Stakeholder alignment</h3><p>Getting owners, lenders, city officials, and neighbors to agree on a plan, then managing those relationships through delivery.</p></div>
+          <div><h3>Capital &amp; structuring</h3><p>Underwriting, fund work, grants, and deal structures that make mission-driven projects financeable.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <div class="sec-head">
+      <p class="mono">Portfolio</p>
+      <div>
+        <h2>A record of the work</h2>
+        <p>Buildings, deals, and funds I've worked on, most recent first.</p>
+      </div>
+    </div>
+
+    <div class="sheets">
+      <article class="sheet">
+        <div class="no"><strong>P-01</strong><span class="status live">In process</span><span class="mono">POPL · 2025–</span></div>
+        <div>
+          <h3>Cambridgeport triple-decker pilot</h3>
+          <p class="sum">POPL's first deal is a 1903 triple-decker in Cambridgeport, owned by an 85-year-old who wants to stay in his home. It's structured as a life estate and equity swap, so he can stay while the building's value is used to preserve it as attainable housing.</p>
+          <dl class="specs">
+            <div><dt>Location</dt><dd>Cambridge, MA</dd></div>
+            <div><dt>Type</dt><dd>Preservation / reuse</dd></div>
+            <div><dt>Structure</dt><dd>Life estate + equity swap</dd></div>
+            <div><dt>Role</dt><dd>Researcher &amp; co-developer</dd></div>
+          </dl>
+
+          <div class="why">
+            <p class="mono why-eyebrow">Case study</p>
+            <h4 class="why-title">Why affordability is so hard to keep, even in one building</h4>
+            <p class="why-lede">The financial model is the easy part. The hard part is getting four parties to say yes to a structure none of them had used before, when each one needs something different.</p>
+            <ol class="yes">
+              <li><span class="who">The owner</span><span class="need">To stay in his home for life, and to know what happens to the building after.</span></li>
+              <li><span class="who">Development partner</span><span class="need">A return that justifies a small, slow, unusual deal.</span></li>
+              <li><span class="who">Legal counsel</span><span class="need">A life estate and equity swap that holds up, with few precedents to lean on.</span></li>
+              <li><span class="who">City council</span><span class="need">Affordability that lasts, and a model worth backing again.</span></li>
+            </ol>
+            <p class="why-lede">I built open feasibility tools so every party could look at the same numbers. They compare three paths:</p>
+            <div class="paths">
+              <div><span class="mono">Path A</span><p>Keep it as permanent affordable rental, as the owner intends</p></div>
+              <div><span class="mono">Path B</span><p>Condo sale that plans for succession</p></div>
+              <div><span class="mono">Path C</span><p>Side-by-side comparison and a 10-step Cambridge action plan for legal and city review</p></div>
+            </div>
+            <a class="cta" href="https://tiffjkim.github.io/life-care-plan/">Explore the feasibility tools ↗</a>
+          </div>
+
+          <ul>
+            <li>Coordinated the owner, development partner, and legal counsel on a new ownership structure</li>
+            <li>Built the ADU financing and condo conversion models</li>
+          </ul>
+          <div class="links"><a href="https://github.com/tiffjkim">GitHub ↗</a></div>
+          <div class="tags"><span class="tag">Economic empowerment</span><span class="tag">Stakeholder alignment</span><span class="tag">Capital &amp; structuring</span></div>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <div class="no"><strong>P-02</strong><span class="status live">Predevelopment</span><span class="mono">Assembly OSM · 2022–24</span></div>
+        <div>
+          <h3>247 East 117th Street, East Harlem</h3>
+          <figure class="shot"><img src="117th-rendering.jpg" alt="Rendering of a slim 15-story tower with a mauve metal facade and rooftop terraces, rising beside a six-story brick tenement on an East Harlem street" width="1600" height="894" loading="lazy"><figcaption>Rendering · Tangram 3DS</figcaption></figure>
+          <p class="sum">A 15-story, 51-unit modular building designed to Passive House standards and fully electric. As Assembly OSM's sole finance hire, I won the building a NYSERDA Buildings of Excellence grant and secured its predevelopment loan from a nonprofit lender.</p>
+          <dl class="specs">
+            <div><dt>Location</dt><dd>East Harlem, NY</dd></div>
+            <div><dt>Program</dt><dd>15 stories · 51 units</dd></div>
+            <div><dt>Capital</dt><dd>NYSERDA award · $3.2M predev loan</dd></div>
+            <div><dt>Role</dt><dd>Finance &amp; development lead</dd></div>
+          </dl>
+          <ul>
+            <li>NYSERDA Buildings of Excellence award winner</li>
+            <li>$3.2M predevelopment loan at 5% fixed from a nonprofit lender</li>
+          </ul>
+          <div class="sub-proj">
+            <h4>East Harlem Downtown Revitalization Initiative</h4>
+            <p>The site sits in East Harlem's $10M Downtown Revitalization Initiative area, a New York State program. I led Assembly's community engagement around it, working with residents and local stakeholders on how the building could fit the neighborhood's plan.</p>
+          </div>
+          <div class="links">
+            <a href="https://www.nyserda.ny.gov/All-Programs/Multifamily-Buildings-of-Excellence/Winners/247-East-117th-Street">NYSERDA project page ↗</a>
+            <a href="https://www.assemblyosm.com/buildings/117">Assembly OSM ↗</a>
+            <a href="https://newyorkyimby.com/2026/07/renderings-reveal-modular-residential-tower-at-247-east-117th-street-in-east-harlem-manhattan.html">New York YIMBY ↗</a>
+            <a href="https://www.eastharlemdri.com/">East Harlem DRI ↗</a>
+            <a href="https://esd.ny.gov/esd-media-center/press-releases/governor-hochul-announces-east-harlem-10-million-nyc-region-winner-sixth-round-dri">$10M award announcement ↗</a>
+          </div>
+          <div class="tags"><span class="tag">Economic empowerment</span><span class="tag">Stakeholder alignment</span><span class="tag">Capital &amp; structuring</span></div>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <div class="no"><strong>P-03</strong><span class="status done">Built</span><span class="mono">Assembly OSM · 2024</span></div>
+        <div>
+          <h3>147 St. Felix Street, Fort Greene</h3>
+          <figure class="shot portrait"><img src="stfelix-interior.jpg" alt="Finished apartment interior at 147 St. Felix Street with white oak floors, a long dining table, black-framed windows, and a rust-colored armchair" width="1100" height="1654" loading="lazy"><figcaption>Finished interior, 147 St. Felix</figcaption></figure>
+          <p class="sum">Assembly's first modular building, a prototype in a Brooklyn historic district. My job was to finance buildings. On this one I also got my hands on it: in 2024 I joined the crew on the factory floor as an extra pair of hands, fitting ROCKWOOL insulation into the modules before they were craned into place. Knowing how a wall actually goes together makes me a better underwriter of one.</p>
+          <dl class="specs">
+            <div><dt>Location</dt><dd>Fort Greene, Brooklyn</dd></div>
+            <div><dt>Type</dt><dd>Modular, all-electric</dd></div>
+            <div><dt>Context</dt><dd>Historic district</dd></div>
+            <div><dt>Role</dt><dd>Finance, plus an extra pair of hands</dd></div>
+          </dl>
+          <div class="links">
+            <a href="https://cleantechnica.com/2024/03/11/building-electrification-meets-modular-construction-in-nyc-historic-district/">CleanTechnica feature ↗</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <div class="no"><strong>P-04</strong><span class="status done">Advisory</span></div>
+        <div>
+          <h3><a class="title-link" href="https://www.aozafund.com/">AOZA Opportunity Zone Fund ↗</a></h3>
+          <p class="sum">I advised AOZA on its $500M Opportunity Zone fund, a vehicle for channeling private capital into economically distressed neighborhoods.</p>
+          <dl class="specs">
+            <div><dt>Vehicle</dt><dd>Qualified OZ fund</dd></div>
+            <div><dt>Size</dt><dd>$500M</dd></div>
+            <div><dt>Work</dt><dd>Fund advisory</dd></div>
+            <div><dt>Role</dt><dd>Advisor</dd></div>
+          </dl>
+          <div class="tags"><span class="tag">Economic empowerment</span><span class="tag">Capital &amp; structuring</span></div>
+        </div>
+      </article>
+
+      <article class="sheet">
+        <div class="no"><strong>P-05</strong><span class="status done">Completed</span><span class="mono">2021–22</span></div>
+        <div>
+          <h3><a class="title-link" href="https://redcarltd.com/">Redcar Creative Office Funds ↗</a></h3>
+          <p class="sum">As a private equity and development associate, I worked on investments and development across Redcar's creative office funds in Los Angeles.</p>
+          <dl class="specs">
+            <div><dt>Asset class</dt><dd>Creative office</dd></div>
+            <div><dt>Fund size</dt><dd>$800M combined</dd></div>
+            <div><dt>Market</dt><dd>Los Angeles</dd></div>
+            <div><dt>Role</dt><dd>PE &amp; Dev Associate</dd></div>
+          </dl>
+          <div class="tags"><span class="tag">Capital &amp; structuring</span></div>
+        </div>
+      </article>
+    </div>
+    </div>
+  </section>
+
+  <section id="popl">
+    <div class="popl">
+      <p class="mono">POPL</p>
+      <div class="body">
+        <h2>Why housing gets stuck, and how to unstick it</h2>
+        <p>I founded POPL in 2024 because the housing crisis is only partly about money and land. It's a coordination problem. The capital, the owners, and the communities that could preserve a building rarely meet on the same deal.</p>
+        <div class="pillars gaps">
+          <div><p class="mono">Capital</p><p class="gap">Big funds can't write a check small enough for a triple-decker.</p></div>
+          <div><p class="mono">Owners</p><p class="gap">Long-time owners hold equity they can't use without selling and leaving.</p></div>
+          <div><p class="mono">Communities</p><p class="gap">Local groups know the buildings but can't reach institutional money.</p></div>
+        </div>
+        <p>POPL works in the space between them.</p>
+        <ul>
+          <li><strong style="color:var(--ink);font-weight:600">Consulting.</strong> Advising mission-driven organizations and capital partners on housing strategy, structuring, and financing.</li>
+          <li><strong style="color:var(--ink);font-weight:600">New ownership models.</strong> Structures like the life estate and equity swap, tested on our own pilot first.</li>
+          <li><strong style="color:var(--ink);font-weight:600">Research and writing.</strong> <a href="https://tiffanyjkim.substack.com/"><em>Crime Pays, Housing Doesn't</em></a>, my Substack.</li>
+        </ul>
+        <p><a href="https://wearepopl.com">Visit wearepopl.com →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="popl">
+      <p class="mono">Experience</p>
+      <div>
+        <table class="cv tnum">
+          <tbody>
+            <tr><td class="yr">2024–</td><td><b>POPL</b></td><td>Founder</td></tr>
+            <tr><td class="yr">2022–24</td><td><b>Assembly OSM</b></td><td>RE Finance, Development &amp; Strategy Associate · sole finance hire</td></tr>
+            <tr><td class="yr">2021–22</td><td><b>Redcar Properties</b></td><td>PE &amp; Development Associate</td></tr>
+            <tr><td class="yr">2019–21</td><td><b>Goldman Sachs</b></td><td>Real Estate Financing Group · Analyst → Associate</td></tr>
+            <tr><td class="yr">2017–18</td><td><b>CBRE · Disney</b></td><td>Investment sales and corporate real estate internships</td></tr>
+          </tbody>
+        </table>
+        <table class="cv tnum" style="margin-top:28px">
+          <tbody>
+            <tr><td class="yr">2025–27</td><td><b>MIT Sloan</b></td><td>MBA · Sustainability and E&amp;I certificates · Dean's Fellowship, ULI Etkin Scholar, Goldie B. Wolfe Miller Scholar</td></tr>
+            <tr><td class="yr">2017–19</td><td><b>USC Marshall</b></td><td>B.S. Real Estate Finance &amp; Social Entrepreneurship · Greif Scholar, BlackRock Founders Scholar</td></tr>
+          </tbody>
+        </table>
+        <p class="mono" style="margin-top:28px">Also: DOE IMPEL Innovator, presented to HUD · Wharton Future of Cities Finance Board · MIT Sandbox</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="border-bottom:0">
+    <div class="contact">
+      <p class="mono">Contact</p>
+      <div>
+        <h2 style="font-size:clamp(26px,3.4vw,36px)">Get in touch</h2>
+        <p style="margin-top:12px;color:var(--ink-2);max-width:60ch">For advisory work, partnerships, or anything on this page.</p>
+        <div class="addrs">
+          <div class="addrline"><span class="addr" id="email1">tkim@wearepopl.com</span><button class="copy" type="button" data-copy="email1">Copy</button></div>
+          <div class="addrline"><span class="addr" id="email2">kimtiffa@mit.edu</span><button class="copy" type="button" data-copy="email2">Copy</button></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <span class="mono">© 2026 Tiffany Kim</span>
+  <span class="mono">Cambridge · Brooklyn</span>
+</footer>
+
+<script>
+document.querySelectorAll('button.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.copy), txt=el.textContent.trim();
+    function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy'},1600)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected, press ⌘C'}
+    try{navigator.clipboard.writeText(txt).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
+
+</body>
+</html>
